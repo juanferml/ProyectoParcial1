@@ -32,7 +32,7 @@ def valorar_expresion(expresion: list, valores_verdad: dict, izq: int, der: int)
         return valores_verdad.get(expresion[izq], -1)  # Devuelve -1 si el átomo no está definido
     elif expresion[izq] == '!':
         resultado = valorar_expresion(expresion, valores_verdad, izq + 1, der)
-        return -1 if resultado == -1 else not resultado
+        return -1 if resultado == -1 else (0 if resultado else 1)
     elif expresion[izq] == '(' and expresion[der] == ')':
         contador_parentesis = 0
         i, operador_medio = izq + 1, -1
