@@ -1,5 +1,4 @@
 # ProyectoDiscretas1
-
 # Documento explicativo 
 
 Este programa es un evalua de fórmulas en lógica proposicional. Permite:
